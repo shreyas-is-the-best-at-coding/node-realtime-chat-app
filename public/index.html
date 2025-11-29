@@ -30,14 +30,6 @@
                            placeholder="Enter your username" autocomplete="off">
                 </div>
                 
-                <div class="input-group">
-                    <label for="room">
-                        <i class="fas fa-door-open"></i>
-                        Room Name
-                    </label>
-                    <input type="text" name="room" id="room" required 
-                           placeholder="Enter room name to join" autocomplete="off">
-                </div>
                 
                 <button type="submit" id="join-btn">
                     <i class="fas fa-sign-in-alt"></i>
@@ -53,7 +45,7 @@
         // Form validation and animations
         document.getElementById('join-form').addEventListener('submit', function(e) {
             const username = document.getElementById('username').value.trim();
-            const room = document.getElementById('room').value.trim();
+            const room = "The real ones".trim;
             const button = document.getElementById('join-btn');
             
             if (!username || !room) {
